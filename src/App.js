@@ -15,16 +15,9 @@ class App extends Component {
           <Link to="/contact">Contact</Link>
       </div>
       
-      <Route exact={true} path='/' render={() => {
-        return <Home />
-      }} />
-      <Route path='/about' render={() => {
-        return <About />
-      }} />
-      <Route path='/contact' render={() => {
-        return <Contact />
-      }}
-      />
+          <Route exact={true} path='/' component={Home} />
+          <Route path='/about' component={About}/>
+          <Route path='/contact' component={Contact} />
       </div>
     );
   }
